@@ -1,9 +1,6 @@
-# 🏥 Doctor Appointment Booking System (MERN)
+# 🏥 MediHub (MERN)
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![Backend CI](https://img.shields.io/badge/Backend-Node.js-green)]()
-[![Frontend CI](https://img.shields.io/badge/Frontend-React-blue)]()
-[![MongoDB Atlas](https://img.shields.io/badge/Cloud_DB-MongoDB_Atlas-green)]()
+
 ---
 
 ## 📌 Project Overview
@@ -14,20 +11,6 @@ The backend features **secure authentication**, **image upload with Cloudinary**
 
 ---
 
-## 📋 Table of Contents
-
-1. [Key Features](#key-features)
-2. [Project Structure](#project-structure)
-3. [Tech Stack](#tech-stack)
-4. [Installation & Setup](#installation--setup)
-5. [API Endpoints](#api-endpoints)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
-8. [Future Improvements](#future-improvements)
-9. [Author](#author)
-10. [Acknowledgments](#acknowledgments)
-
----
 
 <a name="key-features"></a>
 ## 🚀 Key Features
@@ -318,42 +301,6 @@ npm run dev
 
 ---
 
-<a name="testing"></a>
-## 🧪 Testing
-
-### Backend
-
-- Use tools like **Postman**, **Thunder Client** or **Insomnia**.
-- Implement unit tests later using **Jest** or **Mocha**.
-
-### Frontend
-
-- Build and deploy test versions.
-- Use **React Testing Library** or **Cypress** for integration tests.
 
 ---
 
-<a name="deployment"></a>
-## 📦 Deployment
-
-- **Backend**: Deploy on Render, Heroku, or DigitalOcean.
-- **Frontend**: Deploy on Vercel, Netlify, or AWS.
-- Configure environment variables on the platform.
-- Use services like **MongoDB Atlas** and **Cloudinary** for production assets and images.
-
----
-
-<a name="future-improvements"></a>
-## 🚀 Future Improvements
-
-- Email notifications for bookings and cancellations
-- Payment integration
-- Doctor availability calendar view
-- Admin analytics dashboard
-- Pagination and filtering for large appointment datasets
-
----
-
-
-
-### Happy Coding! 🚀
