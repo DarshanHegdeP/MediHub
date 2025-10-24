@@ -22,17 +22,6 @@ app.use("/api/admin", adminRouter);
 app.use("/api/doctor", doctorRouter);
 app.use("/api/user", userRouter);
 
-// default route
-// app.get("/", (req, res) => {
-//   res.json({
-//     message: "Welcome to Doctor Appointment Booking System API 🚀",
-//     status: "API is running successfully",
-//     frontend: "https://mahmud-doctor-mern.vercel.app/",
-//     admin_portal: "https://mahmud-doctor-mern-admin.vercel.app/",
-//     portfolio: "https://mahmudalam.com/",
-//     documentation: "https://mahmud-doctor-api.onrender.com/api-docs",
-//   });
-// });
 
 // 404 handler for unmatched routes
 app.use((req, res) => {
