@@ -5,7 +5,7 @@
 
 ## 📌 Project Overview
 
-The **Doctor Appointment Booking System** is a full-stack web application built using the **MERN Stack**: **MongoDB**, **Express.js**, **React.js**, and **Node.js**. This platform streamlines the process of booking medical appointments online by enabling **Admins**, **Doctors**, and **Users** to manage profiles, schedules, and appointments with ease.
+The **MediHub** is a full-stack web application built using the **MERN Stack**: **MongoDB**, **Express.js**, **React.js**, and **Node.js**. This platform streamlines the process of booking medical appointments online by enabling **Admins**, **Doctors**, and **Users** to manage profiles, schedules, and appointments with ease.
 
 The backend features **secure authentication**, **image upload with Cloudinary**, **appointment management**, and **role-based dashboards**, while the frontend (React) provides a responsive and interactive UI.
 
