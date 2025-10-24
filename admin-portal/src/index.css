@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: Outfit;
+}
+
+
+@theme {
+  --color-primary: #5f6fff;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+body {
+  background-color:#e2c7c7; /* ← put your custom color here */
+  min-height: 100vh;
+}
