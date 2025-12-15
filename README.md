@@ -207,8 +207,8 @@ The backend features **secure authentication**, **image upload with Cloudinary**
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Mahmud-Alam/mern-doctor-appointment-booking-system.git
-cd mern-doctor-appointment-booking-system/
+git clone https://github.com/DarshanHegdeP/MediHub.git
+cd MediHub
 ```
 
 ### 2. Backend Setup
