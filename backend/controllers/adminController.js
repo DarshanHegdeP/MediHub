@@ -20,7 +20,17 @@ const addDoctor = async (req, res) => {
       fees,
       address,
     } = req.body;
-    // const imageFile = req.file;
+    const imageFile = req.file;
+    console.log("Cloudinary config test:", cloudinary.config());
+
+    if (!imageFile) {
+  return res.status(400).json({
+    success: false,
+    message: "Doctor image is required",
+  });
+}
+console.log("REQ.FILE =", req.file);
+
 
     // checking for all data to add-doctor
     if (
@@ -59,10 +69,10 @@ const addDoctor = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     // upload image to cloudinary
-    // const imageUpload = await cloudinary.uploader.upload(imageFile.path, {
-    //   resource_type: "image",
-    // });
-    // const imageUrl = imageUpload.secure_url;
+    const imageUpload = await cloudinary.uploader.upload(imageFile.path, {
+      resource_type: "image",
+    });
+    const imageUrl = imageUpload.secure_url;
 
     // create doctor object
     const doctorData = {
@@ -75,7 +85,7 @@ const addDoctor = async (req, res) => {
       about,
       fees,
       address: JSON.parse(address), // parse address to JSON
-      // image: imageUrl, // store the image URL
+      image: imageUrl, // store the image URL
       date: Date.now(), // store the current date
     };
 
