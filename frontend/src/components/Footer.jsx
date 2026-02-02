@@ -2,7 +2,7 @@ import { assets } from "../assets/assets_frontend/assets";
 
 const Footer = () => {
   return (
-    <footer className="mt-40 bg-gray-50">
+    <footer className="mt-20 bg-gray-50">
       {/* Top Divider */}
       <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
 
