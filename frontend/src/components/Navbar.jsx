@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400  sticky top-0 z-50">
+    <div className="flex items-center justify-between text-sm py-4 px-4 md:px-10 bg-white sticky top-0 z-50 shadow-sm">
       <Link to="/">
         <img className="w-44 cursor-pointer" src={assets.logo} alt="" />
       </Link>
@@ -52,9 +52,8 @@ const Navbar = () => {
             />
             <img className="w-2.5" src={assets.dropdown_icon} alt="" />
             <div
-              className={`${
-                openDropdown ? "block" : "hidden"
-              } absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20`}
+              className={`${openDropdown ? "block" : "hidden"
+                } absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20`}
             >
               <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4">
                 <p
@@ -128,11 +127,10 @@ const Navbar = () => {
                     setShowMenu(false);
                     navigate("/login");
                   }}
-                  className={`px-6 py-2 rounded ${
-                    location.pathname === "/login"
+                  className={`px-6 py-2 rounded ${location.pathname === "/login"
                       ? "bg-primary text-white"
                       : "bg-transparent text-black"
-                  }`}
+                    }`}
                 >
                   Login
                 </button>

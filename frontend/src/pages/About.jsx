@@ -2,61 +2,90 @@ import { assets } from "../assets/assets_frontend/assets";
 
 const About = () => {
   return (
-    <div>
-      <div className="text-center text-2xl pt-10 text-gray-500">
-        <p>
-          ABOUT <span className="text-gray-700 font-medium">US</span>
+    <div className="px-4 md:px-10">
+     
+      <div className="text-center pt-6">
+        <h1 className="text-2xl uppercase text-gray-700 font-medium">
+          About Us
+        </h1>
+        <p className="mt-2 text-sm text-gray-500">
+          Learn more about MediHub and our mission to improve digital healthcare
         </p>
       </div>
 
-      <div className="my-10 flex flex-col md:flex-row gap-12">
+     
+      <div className="mt-14 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+  
         <img
-          className="w-full md:max-w-[360px]"
+          className="w-full h-115 object-cover rounded-xl shadow-sm"
           src={assets.about_image}
-          alt=""
+          alt="About MediHub"
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600 capitalize">
-          <p>
-            Welcome to MediHub, your trusted partner in managing your
-            healthcare needs conveniently and efficiently. At MediHub, we
-            understand the challenges individuals face when it comes to
-            scheduling doctor appointments and managing their health records.
+
+
+  
+        <div className="bg-gray-50 rounded-xl p-8 flex flex-col gap-5 text-gray-600">
+          <p className="text-base leading-7">
+            MediHub is a digital healthcare platform designed to simplify the
+            process of booking doctor appointments and managing healthcare
+            services efficiently. We understand the challenges patients face
+            when accessing timely medical care and aim to make the experience
+            smooth and reliable.
           </p>
-          <p>
-            MediHub Is Committed To Excellence In Healthcare Technology. We
-            Continuously Strive To Enhance Our Platform, Integrating The Latest
-            Advancements To Improve User Experience And Deliver Superior
-            Service. Whether You're booking Your First Appointment Or Managing
-            ongoing care, MediHub is Here To Support You Every Step Of The
-            Way
+
+          <p className="text-base leading-7">
+            MediHub is committed to excellence in healthcare technology. We
+            continuously enhance our platform by integrating modern web
+            technologies to improve user experience and deliver secure,
+            reliable services. Whether you are booking your first appointment
+            or managing ongoing care, MediHub supports you at every step.
           </p>
-          <b className="text-gray-800">Our Vision</b>
-          <p>
-            Our Vision At MediHub Is to A seamless Healthcare Experience for
-            Every User. We Aim To Bridge The Gap between Patients And Healthcare
-            providers, making it easier for fou to access The Care You Need,
-            When you need it.
-          </p>
+
+          <div>
+            <h2 className="text-lg font-medium text-gray-700 mb-2">
+              Our Vision
+            </h2>
+            <p className="text-base leading-7">
+              Our vision is to create a seamless healthcare experience for every
+              user by bridging the gap between patients and healthcare
+              providers. We strive to make quality healthcare accessible,
+              organized, and easy to manage whenever it is needed.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="text-xl my-4">
-        <p className="uppercase">
-          Why <span className="text-gray-700 font-semibold">Choose Us</span>
-        </p>
-      </div>
-      <div className="flex flex-col md:flex-row mb-20">
-        <div className="border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
-          <b>Efficiency:</b>
-          <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
-        </div>
-        <div className="border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
-          <b>Convenience:</b>
-          <p>Access to a network of trusted healthcare professionals in your area.</p>
-        </div>
-        <div className="border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
-          <b>Personalization:</b>
-          <p>Tailored recommendations and reminders to help you stay on top of your health.</p>
+      {/* Why Choose Us */}
+      <div className="mt-20 max-w-6xl mx-auto">
+        <h2 className="text-xl uppercase text-gray-700 font-medium mb-8">
+          Why Choose Us
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+          <div className="bg-gray-50 rounded-lg p-6 text-gray-600">
+            <h3 className="font-semibold text-gray-700 mb-2">Efficiency</h3>
+            <p className="leading-6">
+              Streamlined appointment scheduling designed to save time and
+              reduce manual effort.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-6 text-gray-600">
+            <h3 className="font-semibold text-gray-700 mb-2">Convenience</h3>
+            <p className="leading-6">
+              Easy access to healthcare services and professionals through a
+              single digital platform.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-6 text-gray-600">
+            <h3 className="font-semibold text-gray-700 mb-2">Personalization</h3>
+            <p className="leading-6">
+              A user-focused experience with organized information and
+              appointment management.
+            </p>
+          </div>
         </div>
       </div>
     </div>

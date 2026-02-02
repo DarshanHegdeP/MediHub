@@ -1,48 +1,45 @@
 import { assets } from "../assets/assets_frontend/assets";
+
 const Footer = () => {
   return (
-    <div className="md:mx-10">
-      <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
-        {/* ---------- Section 01 ---------- */}
-        <div>
-          <img className="mb-5 w-40" src={assets.logo} alt="" />
-          <p className="w-full md:w-2/3 text-gray-600 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            nesciunt illo velit minima similique voluptatibus magnam est alias
-            praesentium doloribus quo voluptatem illum, libero, et aspernatur
-            excepturi, autem corrupti. Placeat!
-          </p>
-        </div>
+    <footer className="mt-40 bg-gray-50">
+      {/* Top Divider */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
 
-        {/* ---------- Section 02 ---------- */}
-        <div>
-          <p className="text-xl font-medium mb-5">COMPANY</p>
-          <ul className="flex flex-col gap-2 text-gray-600">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
+      <div className="md:mx-10 py-14 flex flex-col items-center text-center gap-6 text-sm text-gray-600">
+        
+        {/* Logo */}
+        <img
+          src={assets.logo}
+          alt="MediHub Logo"
+          className="w-36"
+        />
 
-        {/* ---------- Section 03 ---------- */}
-        <div>
-          <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
-          <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+880 1234 567890</li>
-            <li>darshan@gmail.com</li>
-          </ul>
-        </div>
-      </div>
-      {/* ---------- Copyright Section ---------- */}
-      <div>
-        <hr />
-        <p className="py-5 text-sm text-center ">
-          Copyright © {new Date().getFullYear()}{" "}
-          <a className="hover:text-primary font-bold" href="#">Darshan</a>.
+        {/* Description */}
+        <p className="max-w-2xl leading-6">
+          MediHub is a trusted digital healthcare platform designed to simplify
+          medical appointment scheduling. It helps patients connect with doctors
+          efficiently while ensuring secure access and reliable healthcare
+          management.
+        </p>
+
+        {/* Contact */}
+        <p className="text-gray-700">
+          Support Email:{" "}
+          <span className="font-semibold text-primary">
+            medihub@gmail.com
+          </span>
+        </p>
+
+        {/* Accent Divider */}
+        <div className="w-24 h-1 rounded-full bg-gradient-to-r from-sky-400 to-emerald-400 mt-4" />
+
+        {/* Copyright */}
+        <p className="text-xs text-gray-500 mt-2">
+          © {new Date().getFullYear()} MediHub. All rights reserved.
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -14,7 +14,7 @@ const DoctorCard = ({ doctor }) => {
         doctor.available ? "" : "opacity-50"
       }`}
     >
-      <img className="bg-blue-50" src={doctor.image} alt={doctor.name} />
+      <img className="w-full h-44 object-cover bg-blue-50" src={doctor.image} alt={doctor.name} />
       <div className="p-4">
         <div className="flex items-center gap-2 text-sm text-center">
           <p

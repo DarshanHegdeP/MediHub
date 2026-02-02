@@ -159,7 +159,7 @@ const doctorDashboard = async (req, res) => {
   try {
     const { docId } = req.user;
 
-    const appointments = await appointmentModel.find({});
+    const appointments = await appointmentModel.find({ docId });
 
     let earning = 0;
     appointments.map((item) => {
